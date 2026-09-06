@@ -4,7 +4,8 @@
 
   function isAllowedTunnelUrl(value) {
     return typeof value === "string" && value === value.trim() &&
-      /^https:\/\/[a-z0-9-]+\.trycloudflare\.com\/?$/.test(value);
+      (/^https:\/\/[a-z0-9-]+\.trycloudflare\.com\/?$/.test(value) ||
+       /^https:\/\/cumcm\.xxzw\.online\/?$/.test(value));
   }
 
   function isTimestamp(value) {
