@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="数学建模团队工作台的固定入口。请在目标平台登录。">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'">
+  <title>团队入口 · 国赛工作台</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳转到正文</a>
+  <header class="site-header">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">M</span><span>国赛 / 团队入口<small>MODELING WORKSPACE</small></span></div>
+    <span class="header-note">固定入口 · 按需连接</span>
+  </header>
+  <main id="content" tabindex="-1">
+    <div class="entry-layout">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">团队协作 / 工作入口</p>
+        <h1 id="page-title">进入团队<br>工作台。</h1>
+        <p class="lead">任务、材料、审核，在目标平台继续。<br>收藏本页，通道更新后仍从这里进入。</p>
+        <p class="scope-note">本页仅提供入口，不接收密码。<br>进入后请在目标平台登录。</p>
+      </section>
+      <section class="connection-panel" id="status-panel" data-state="offline" aria-labelledby="status-heading">
+        <div class="panel-top"><span>访问通道</span><span class="status-dot" aria-hidden="true"></span></div>
+        <div class="status-copy" role="status" aria-live="polite" aria-atomic="true">
+          <p class="status-label" id="status-label">暂未开放</p>
+          <h2 id="status-heading">当前入口状态</h2>
+          <p class="status-message" id="status-message">当前未发布访问地址。本机离线或通道尚未开启，请联系管理员。</p>
+        </div>
+        <div class="entry-actions">
+          <a class="button primary" id="entry-link" aria-disabled="true" tabindex="-1" target="_blank" rel="noopener noreferrer">进入工作台 <span aria-hidden="true">↗</span></a>
+          <button class="button secondary" id="refresh-button" type="button" disabled>刷新入口状态</button>
+        </div>
+        <dl class="publication"><div><dt>状态发布日期</dt><dd><time id="published-at">尚未发布</time></dd></div></dl>
+        <p class="fine-print">每 30 秒读取一次已发布状态。发布日期不是实时心跳，也不代表主机当前在线。</p>
+        <noscript><p class="fallback-note">请启用 JavaScript 后刷新，以读取当前地址；仍不可用时请联系管理员。</p></noscript>
+      </section>
+    </div>
+    <section class="help" aria-labelledby="help-title">
+      <h2 id="help-title">打不开时</h2>
+      <p>先刷新入口状态；若已进入但目标页面无法连接，请联系管理员确认主控电脑和通道。<br>不要在本页填写或发送密码，也不要反复使用旧通道地址。</p>
+    </section>
+  </main>
+  <footer class="site-footer"><span>固定入口 / 临时访问通道</span><p>临时通道用于联调。入口不变，但通道可能断线；主控电脑离线时请联系管理员。</p></footer>
+</body>
+</html>
